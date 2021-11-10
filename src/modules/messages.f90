@@ -9,5 +9,6 @@ module messages
       character(len=254), parameter :: hallo="Hallo"
       character(len=254), parameter :: hola="Hola"
       character(len=254), parameter :: goodby="Goodby"
+      character(len=254), parameter :: agur="Agur"
 
 end module messages
