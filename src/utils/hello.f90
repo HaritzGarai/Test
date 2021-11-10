@@ -4,6 +4,8 @@ program a
 
         implicit none
 
+
         print*, trim(hello)
+
 
 end program a
