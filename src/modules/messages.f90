@@ -8,5 +8,6 @@ module messages
       character(len=254), parameter :: kaixo="Kaixo"
       character(len=254), parameter :: hallo="Hallo"
       character(len=254), parameter :: hola="Hola"
+      character(len=254), parameter :: goodby="Goodby"
 
 end module messages
