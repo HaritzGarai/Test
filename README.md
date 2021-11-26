@@ -1,2 +1,2 @@
 # Test
-A repository to do my tests with GitHub
+A repository to do my tests with GitHub.
