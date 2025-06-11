@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.10)
 
-project(intw VERSION 0.1 LANGUAGES Fortran)
+project(intw VERSION 0.0.0 LANGUAGES Fortran)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
