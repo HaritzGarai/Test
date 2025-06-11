@@ -5,7 +5,7 @@ program a
         implicit none
 
 
-        print*, trim(hello)
+        print*, trim(hello
 
 
 end program a
