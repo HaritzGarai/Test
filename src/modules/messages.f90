@@ -4,12 +4,12 @@ module messages
 
       public
 
-      character(len=254), parameter :: hello="Hello!!"
-      character(len=254), parameter :: kaixo="Kaixo!!"
-      character(len=254), parameter :: hallo="Hallo!!"
-      character(len=254), parameter :: hola="Hola!!"
-      character(len=254), parameter :: goodby="Goodby!!"
-      character(len=254), parameter :: agur="Agur!!"
-      character(len=254), parameter :: adios="Adios!!"
+      character(len=254), parameter :: hello="Hello!"
+      character(len=254), parameter :: kaixo="Kaixo!"
+      character(len=254), parameter :: hallo="Hallo!"
+      character(len=254), parameter :: hola="Hola!"
+      character(len=254), parameter :: goodby="Goodby!"
+      character(len=254), parameter :: agur="Agur!"
+      character(len=254), parameter :: adios="Adios!"
 
 end module messages
