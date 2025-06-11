@@ -32,10 +32,3 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           bumpversion patch  # or minor/major based on your logic
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: "$(git describe)"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
