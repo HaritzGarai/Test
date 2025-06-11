@@ -5,6 +5,6 @@ program a
 
         implicit none
 
-        print*, trim(goodby)
+        print*, trim(agur)
 
 end program a

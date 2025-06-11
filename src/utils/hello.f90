@@ -5,7 +5,7 @@ program a
         implicit none
 
 
-        print*, trim(hello)
+        print*, trim(kaixo)
 
 
 end program a
