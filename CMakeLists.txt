@@ -27,7 +27,13 @@ add_library(mylib STATIC
 add_executable(
 	hello
 	src/utils/hello.f90
-	# src/messages.f90
+)
+
+add_executable(
+  goodby
+  src/utils/goodby.f90
 )
 
 target_link_libraries(hello PRIVATE mylib)
+target_link_libraries(goodby PRIVATE mylib)
+
