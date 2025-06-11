@@ -1,0 +1,41 @@
+# .github/workflows/release.yml
+name: Create Release
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python (if needed for versioning script)
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install bumpversion  # If you're using bumpversion for versioning
+
+      # Only run version bumping and release creation on push to main
+      - name: Bump version
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          bumpversion patch  # or minor/major based on your logic
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag: "$(git describe)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
