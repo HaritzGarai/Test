@@ -40,7 +40,7 @@ jobs:
         run: ford ford-doc.md
 
       - name: Deploy documentation
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4.7.3
         with:
           branch: gh-pages # The branch the action should deploy to.
